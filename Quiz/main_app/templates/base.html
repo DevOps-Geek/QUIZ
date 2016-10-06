@@ -1,0 +1,23 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+    <title>QUIZ</title>
+  </head>
+  <body>
+     <nav class="navbar">
+       <a href="/">
+         <img class="logo" src="{% static 'images/logo.png' %}" alt="TESCO">
+       </a>
+     </nav>
+    {% block content %}
+     <main>
+     </main>
+    {% endblock %}
+  <footer>
+   <p class="footer">&copy; Tesco.com 2016 All Rights Reserved</p>
+  </footer>
+  </body>
+</html>
